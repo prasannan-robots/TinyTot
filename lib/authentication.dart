@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:sign_in_button/sign_in_button.dart';
 import 'package:tinytot_app/signuppage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -126,7 +126,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
               ),
             ),
             SignInButton(
-              Buttons.Google,
+              Buttons.google,
               text: "Continue with Google",
               onPressed: () {
                 signInWithGoogle().then((result) {});

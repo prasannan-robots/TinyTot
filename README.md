@@ -1,16 +1,15 @@
-# tinytot_app
+# TinyTot
 
-Spreading books
+A Flutter app (Firebase auth + Firestore) for sharing and discovering children's books/stories,
+with plan selection and a simple feed.
 
-## Getting Started
+## Setup
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run        # needs the Firebase config already in android/ios + lib/firebase_options.dart
+flutter build apk
+```
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Firebase project: see `lib/firebase_options.dart`. Deploy Firestore security rules before using in
+production (this repo currently ships none — see the PR note).
