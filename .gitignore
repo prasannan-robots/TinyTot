@@ -42,3 +42,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Stray Node files (this is a Flutter app, not Node)
+node_modules/
+package.json
+package-lock.json

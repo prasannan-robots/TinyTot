@@ -6,7 +6,7 @@ import 'settings.dart';
 
 class HomeScreen extends StatefulWidget {
   final int maxBooks;
-  HomeScreen({required this.maxBooks});
+  const HomeScreen({super.key, this.maxBooks = 0});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
